@@ -1,0 +1,96 @@
+[
+  {
+  "origen": "Bogotá",
+  "destino": "Medellin",
+  "fecha": "2022-11-13 11:00:00",
+  "sillas": [
+    {
+      "_id": "01",
+      "nombre": "economicas",
+      "sillas": 100,
+      "preciounidad": 100000
+    },
+    {
+      "_id": "02",
+      "nombre": "ejecutiva",
+      "sillas": 100,
+      "preciounidad": 500000
+    }
+  ],
+  "tags": [
+    "primavera"
+  ],
+  "tag": [
+    "primavera"
+  ]
+},{
+  "origen": "Bogota",
+  "destino": "Medellin",
+  "fecha": "2022-11-14 11:00:00",
+  "sillas": [
+    {
+      "_id": "01",
+      "nombre": "economicas",
+      "sillas": 100,
+      "preciounidad": 100000
+    },
+    {
+      "_id": "02",
+      "nombre": "ejecutiva",
+      "sillas": 100,
+      "preciounidad": 500000
+    }
+  ],
+  "tags": [
+    "primavera"
+  ],
+  "tag": [
+    "primavera"
+  ]
+},{
+  "origen": "Medellin",
+  "destino": "Bogota",
+  "fecha": "2022-11-13 11:00:00",
+  "sillas": [
+    {
+      "_id": "01",
+      "nombre": "economicas",
+      "sillas": 100,
+      "preciounidad": 150000
+    },
+    {
+      "_id": "02",
+      "nombre": "ejecutiva",
+      "sillas": 100,
+      "preciounidad": 800000
+    }
+  ],
+  "tags": [
+    "negocio",
+    "nevera"
+  ]
+},{
+  "origen": "Medellin",
+  "destino": "Leticia",
+  "fecha": "2022-11-14 11:00:00",
+  "sillas": [
+    {
+      "_id": "01",
+      "nombre": "economicas",
+      "sillas": 50,
+      "preciounidad": 200000
+    },
+    {
+      "_id": "02",
+      "nombre": "ejecutiva",
+      "sillas": 50,
+      "preciounidad": 1000000
+    }
+  ],
+  "tags": [
+    "extremo",
+    "vacaciones",
+    "naturaleza"
+  ]
+}
+]

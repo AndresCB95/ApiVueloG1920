@@ -1,6 +1,7 @@
 const express = require("express")
 const cors = require("cors")
 const body_parser = require("body-parser")
+const vueloService = require("./VueloService.js")
 
 const app = express()
 const path =  "/vuelos"
@@ -10,18 +11,17 @@ app.use(cors())
 app.use(body_parser.json())
 
 app.get(path ,
-    (request, response)=>{
+    async (request, response)=>{
         console.log("llego peticion")
-        console.log(request)
-
-        response.send("Hola mundo")
+        const lista = await vueloService.getVuelos()
+        response.send(lista)
     }
 )
 
 
 app.listen(portvuelos,
     ()=>{
-        console.log("Subio api vuelo en el puerto"+port)
+        console.log("Subio api vuelo en el puerto"+portvuelos)
     }
 )
 
