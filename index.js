@@ -18,6 +18,17 @@ app.get(path ,
     }
 )
 
+app.patch(path,
+
+    async (request, response)=>{
+        console.log("llego peticion")
+        const reservaSillas = request.body
+        const lista = await vueloService.setSillasDisponibles(reservaSillas)
+        response.send(lista)
+    }
+
+)
+
 
 app.listen(portvuelos,
     ()=>{

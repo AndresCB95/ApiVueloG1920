@@ -37,11 +37,11 @@ const find = async (collection,filtro)=>{
     return resultado
 }
 
-const findOne = (collection,filtro)=>{
+const findOne = async (collection,filtro)=>{
 
     let resultado = {}
 
-    collection.findOne(filtro)
+    await collection.findOne(filtro)
     .then(
         (respuesta)=>{
             resultado = respuesta
@@ -76,6 +76,23 @@ const insert = (collection,documentolist)=>{
     return "Documento insertados"
 }
 
+
+const updateVuelos = async (collection,filtro,update)=>{
+
+    await collection.updateOne(filtro,update)
+    .then(
+        (response)=>{
+            console.log("Actualizo el documento")
+        }
+    )
+    .catch(
+        (error)=>{
+            console.log("Error Actualizando el documento")
+            console.log(error)
+        }
+    )
+}
+
 const deletevuelo = (collection,filtro)=>{
 
     collection.deleteMany(filtro)
@@ -106,3 +123,4 @@ module.exports.findOne = findOne;
 module.exports.insert = insert;
 module.exports.deletevuelo = deletevuelo;
 module.exports.close = closeClient;
+module.exports.updateVuelos = updateVuelos;
