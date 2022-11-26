@@ -1,0 +1,17 @@
+services:
+  apivuelo:
+    image: apivuelo:latest
+    ports:
+      - 8081:8081
+  apireserva:
+    image: apireserva:latest
+    ports:
+      - 8084:8084
+  apipago:
+    image: apipago:latest
+    ports:
+      - 8083:8083
+  front:
+    image: aerolinea1920:latest
+    ports:
+      - 8080:3000
